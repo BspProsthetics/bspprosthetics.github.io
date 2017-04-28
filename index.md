@@ -28,7 +28,7 @@ Check out this video for a live demo:
 
 <a id = "Quick_Look"></a>
 ## Quick Look 
-![alt text](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png)
+![alt text](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png){.callout}
 
 - Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
 - Our solution provides both intuitive control and multiple degrees of freedom
