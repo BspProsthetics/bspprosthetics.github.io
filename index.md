@@ -28,7 +28,7 @@ Check out this video for a live demo:
 
 <a id = "Quick_Look"></a>
 ## Quick Look 
-![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png)
+![alt text](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png)
 - Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
 - Our solution provides both intuitive control and multiple degrees of freedom
 - We do this by using EEG and EMG methods of control
@@ -40,7 +40,7 @@ prosthetic wrist rotation
 
 <a id = "Introduction"></a>
 ## Introduction
-  ![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_EEGcap.png)
+  ![alt text](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_EEGcap.png)
   Current upper limb prosthetics are often either difficult to control or incredibly expensive and invasive. The simpler prosthetics require the user to either flex or lift their arm to control their prosthetic device, which is limiting and not intuitive, while the more expensive devices require extensive surgery and physical remapping of the patient’s nerves. Our design implementes a solution based on motor intent control via brain waves in addition to traditional myoelectric (muscle) control. This is all done non-invasively and is specifically designed to be compatible with 3-D printed prosthetics and will thereby work for even the cheapest of prosthetic devices. 
     The brainwave control is accomplished by taking data gathered from an EEG headset and using machine learning algorithms to detect if the user is thinking about opening or closing their hand. This signal is then sent via Bluetooth to the prosthetic device, or in our case, a robotic hand for demonstration purposes. 
     The EMG control uses electrodes placed on the upper arm to detect if the user is flexing, which then sends a signal to the prosthetic device to rotate the wrist, or in the case of an actual prosthetic device, change the hand position or move the fingers. This overall system will allow the user to feel more in control as well as demonstrate what the future of prosthetics could be like. Future improvements to the device will consist of haptic feedback, increased accuracy, and the elimination of EMG controlled rotation in favor of purely EEG controlled rotation.
@@ -52,7 +52,7 @@ prosthetic wrist rotation
 
 <a id = "prop"></a>
 ## Proposed Design Solution: EEG + EMG Controlled Prosthetics 
-![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_Susy.png)
+![alt text](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_Susy.png)
 The design selected allows user's brain signals from the scalp to be collected via an EEG headset. The signal is then sent to the cloud and is processed with software that contains a pipeline that will identify motor intent and translate it into a motor command to the prosthetic. This allows the amputee to feel as though the prosthetic is moving naturally. Additionally, the EMG component will be used to determine fine motor control, such as finger movements. An EMG cuff will be placed around the subject’s forearm, which will pick up muscle contraction biosignals. The implementation costs will come from a quality EEG headset (~$4000-$40,000), and a simple myoelectric prosthetic (~$3000).
 
 <a id = "imp"></a>
