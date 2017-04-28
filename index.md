@@ -2,22 +2,13 @@
 ### _Powering the prosthetic devices of tomorrow_
 
 ### Authors
-
-- Anjulie Agrusa
-- Nick Harrington
-- Austin Lefebvre
-- Carlo Mazzaferro
-- Nicolle Woo
+Anjulie Agrusa, Nick Harrington, Austin Lefebvre, Carlo Mazzaferro, Nicolle Woo
 
 ### Mentors
+Dr. Todd Coleman, Dr. Shankar Subramaniam
 
-- Dr. Todd Coleman
-- Dr. Shankar Subramaniam
-
-### Collaborators
-
-- Qusp
-- Cognionics
+### Acknowledgements
+Qusp, Cognionics
 
 Check out this video for a live demo:
 
