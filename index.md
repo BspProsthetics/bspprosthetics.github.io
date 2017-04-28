@@ -69,7 +69,7 @@ The pipeline responsible for the filtering, analyzing, and producing an output i
 Thanks to the folks at [Neuropype](http://neuropype.io/), we were able to use their software for the creation of a real-time suite for EEG data analysis. By hacking into it and cleverly adding processing elements (such as the Gradient Boosting module), we were able to implement out own predictive algorithms. 
 
 <a id = "disc"></a>
-## Discussion and Conclusion
+## Discussion & Conclusion
 The final design met the requirements by enabling a full-blown pipeline that implements methods for data acquisition, processing, analysis and output evaluation. In particular, the final product enables a user to control a prosthetic device based on inputs coming from his or her body with reasonable accuracy. Despite the design challenges that a real-time pipeline targeting oftentimes extremely noisy data can carry, the design proposed meets the goal initially proposed. By combining the intuitiveness of mind-controlled open-close action and the precision of EMG signal transduction, we were able to develop a working prototype of that could enhance a debilitated person’s mobility. Nonetheless, challenges exist. In particular, wearing the device for extended periods of time can be painful to the user, and obtaining signal with low noise values requires constant adjustments to the headset. More research and development should be directed towards these areas, which will enable the product to be more widely validated, tested and adopted.
 
 
