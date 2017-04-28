@@ -1,21 +1,7 @@
 ## BioSignal Prosthetics
 ### _Powering the prosthetic devices of tomorrow_
 
-### Authors
-Anjulie Agrusa, Nick Harrington, Austin Lefebvre, Carlo Mazzaferro, Nicolle Woo
-
-### Mentors
-Dr. Todd Coleman, Dr. Shankar Subramaniam
-
-### Acknowledgements
-Qusp, Cognionics
-
-Check out this video for a live demo:
-
-[![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_vid.png)](https://player.vimeo.com/video/208059205)
-
-
-## Outline of The Project Proposal
+## Outline of the Project
 <a id = "toc"></a>
 1. <a href = "Quick_Look"> Quick Look</a>
 2. <a href = "#Introduction"> Introduction</a>
@@ -23,11 +9,14 @@ Check out this video for a live demo:
 4. <a href = "#prop">Proposed Design Solution: EEG + EMG Controlled Prosthetics </a>
 5. <a href = "#imp">Implementation Details</a>
 6. <a href = "#disc">Discussion and Conclusion</a>
-7. <a href = "#bib">Bibliography</a>
+7. <a href = "#team">The Team</a>
+8. <a href = "#bib">Bibliography</a>
 
 <a id = "Quick_Look"></a>
 ## Quick Look 
-![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png)
+Check out this video for a live demo:
+
+[![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_vid.png)](https://player.vimeo.com/video/208059205)
 
 - Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
 - Our solution provides both intuitive control and multiple degrees of freedom
@@ -40,6 +29,8 @@ prosthetic wrist rotation
 
 <a id = "Introduction"></a>
 ## Introduction
+![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png)
+
   Current upper limb prosthetics are often either difficult to control or incredibly expensive and invasive. The simpler prosthetics require the user to either flex or lift their arm to control their prosthetic device, which is limiting and not intuitive, while the more expensive devices require extensive surgery and physical remapping of the patient’s nerves. Our design implementes a solution based on motor intent control via brain waves in addition to traditional myoelectric (muscle) control. This is all done non-invasively and is specifically designed to be compatible with 3-D printed prosthetics and will thereby work for even the cheapest of prosthetic devices. 
     The brainwave control is accomplished by taking data gathered from an EEG headset and using machine learning algorithms to detect if the user is thinking about opening or closing their hand. This signal is then sent via Bluetooth to the prosthetic device, or in our case, a robotic hand for demonstration purposes. 
     The EMG control uses electrodes placed on the upper arm to detect if the user is flexing, which then sends a signal to the prosthetic device to rotate the wrist, or in the case of an actual prosthetic device, change the hand position or move the fingers. This overall system will allow the user to feel more in control as well as demonstrate what the future of prosthetics could be like. Future improvements to the device will consist of haptic feedback, increased accuracy, and the elimination of EMG controlled rotation in favor of purely EEG controlled rotation.
@@ -77,6 +68,17 @@ Many important additional features and modifications should be considered for fu
 The first, is the software component. The latency of our device is quite poor, with a delay between intent and action of approximately 10 seconds. This delay is likely due to the many various connections between devices used, that is, connections between EEG to Neuropype, to Python, to Arduino, to Bluetooth, to the prosthetic arm. By developing a way to decrease the amount of necessary intermediate connections between EEG, Neuropype, and the prosthetic arm, there will be an improved latency and quicker reaction of the arm. Additionally, further work can be implemented into the machine learning algorithms in order to improve accuracy. The algorithms could also be used to interpret and classify additional EEG patterns in order to differentiate between the intent to move specific fingers, and with specific amounts of force. For future development, the actual purchase (rather than the occasional rental) of an EEG device would be of great use to more frequently test and train the machine learning algorithms. A possible additional modification of the device may include haptic feedback (either through vibration or actual nerve stimulation).
 
 The second area for improvement, is for the hardware. For example, rather than having a hand made of servos, duct tape, and coat hangers, an actual 3D-printed hand could have been created. This hand could have functionality of all 5 fingers and of the wrist, rather than having a single servo controlling only the thumb, and another servo controlling the rotation of the wrist. Furthermore, a more concealed housing for the breadboard, wires, and Arduinos can be developed. This housing should make sure to properly avoid disconnecting loose wires, as ours often did. This housing should also make sure to properly shield the wires between electrodes and the Arduino to avoid any electromagnetic interference, and thus noise. All of this could be accomplished by using the Exiii HACKberry, a 3D printed prosthetic arm from a start up in Japan (pictured on this site).
+
+<a id = "team"></a>
+## The Team
+
+Anjulie Agrusa, Nick Harrington, Austin Lefebvre, Carlo Mazzaferro, Nicolle Woo
+
+### Mentors
+Dr. Todd Coleman, Dr. Shankar Subramaniam
+
+### Acknowledgements
+Qusp, Cognionics
 
 # TUTORIAL ON HOW TO USE MARKDOWN!!!!!!!!!!!!
 
