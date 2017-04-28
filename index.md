@@ -54,7 +54,7 @@ prosthetic wrist rotation
 ## Proposed Design Solution: EEG + EMG Controlled Prosthetics 
 ![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_Susy2.png)
 
-The design selected allows user's brain signals from the scalp to be collected via an EEG headset. The signal is then sent to the cloud and is processed with software that contains a pipeline that will identify motor intent and translate it into a motor command to the prosthetic. This allows the amputee to feel as though the prosthetic is moving naturally. Additionally, the EMG component will be used to determine fine motor control, such as finger movements. An EMG cuff will be placed around the subject’s forearm, which will pick up muscle contraction biosignals. The implementation costs will come from a quality EEG headset (~$4000-$40,000), and a simple myoelectric prosthetic (~$3000).
+The design selected allows user's brain signals from the scalp to be collected via an EEG headset. The signal is then sent to the cloud and is processed with software that contains a pipeline that will identify motor intent and translate it into a motor command to the prosthetic. This allows the amputee to feel as though the prosthetic is moving naturally. Additionally, the EMG component will be used to determine fine motor control, such as finger movements. An EMG cuff will be placed around the subject’s forearm, which will pick up muscle contraction biosignals. The implementation costs will come from a quality EEG headset ($4000-$40,000), and a simple myoelectric prosthetic ($3000).
 
 <a id = "imp"></a>
 ## Implementation Details
