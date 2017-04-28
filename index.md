@@ -8,9 +8,10 @@
 3. <a href = "#bg_info">Relevant Background Information</a>
 4. <a href = "#prop">Proposed Design Solution: EEG + EMG Controlled Prosthetics </a>
 5. <a href = "#imp">Implementation Details</a>
-6. <a href = "#disc">Discussion and Conclusion</a>
-7. <a href = "#team">The Team</a>
-8. <a href = "#bib">Bibliography</a>
+6. <a href = "#safety">Safety and </a>
+7. <a href = "#disc">Discussion and Conclusion</a>
+8. <a href = "#team">The Team</a>
+9. <a href = "#bib">References</a>
 
 <a id = "Quick_Look"></a>
 ## Quick Look 
@@ -38,13 +39,13 @@ prosthetic wrist rotation
 <a id = "bg_info"></a>
 ## Relevant Background Information
 
-  The most simple prosthetic is just a static hook or other tool attached to the person’s arm, without any dynamic movement or control. Body powered prosthetics use another part of the person’s body, often their shoulder, to open and close a hand-like apparatus at the end of the prosthetic device. These prosthetics are more functional than just basic hook or tool, yet they still are simple enough to only require low maintenance and a short adjustment period. The myoelectric, on the other hand, has electrodes attached to a muscle on the patient so that when the patient flexes that muscle, it sends a signal to open or close the prosthetic hand. The benefits of this are that it is more seamless, there’s no need to move a shoulder to close a hand. However, such advanced prosthetics are often very costly, have a steep learning curve, and don’t actually provide that much more functionality than the more simple body powered option [1]. The final type of prosthetics (almost entirely in the research phase) are brain controlled. Currently, these are mostly done invasively as external electrodes have difficulty in gathering an accurate and dependable signal [2]. Electrodes are implanted into the patient’s motor cortex to receive signals of motor intent from the patient, and that data would then be processed and used to control the prosthetic. Clearly, if fully functional, this would be the far better choice as it would allow for an almost seamless use of one’s artificial limb, however the need for electrodes to be implanted surgically is a significant drawback. Additionally, advanced processing of the neural signals is needed for such a system to be accurate [3]. These types of prosthetics are subject to considerable amounts of research, yet no clinical versions are currently available. Overall, much improvement is still needed in this field. Even in the more advanced myoelectric version, the control scheme is still difficult, and even in the best of circumstances, few if any prosthetics can provide the user with force or tactile feedback, making even the simple task of grasping things difficult [4].
+  The most simple prosthetic is just a static hook or other tool attached to the person’s arm, without any dynamic movement or control. Body powered prosthetics use another part of the person’s body, often their shoulder, to open and close a hand-like apparatus at the end of the prosthetic device. These prosthetics are more functional than just basic hook or tool, yet they still are simple enough to only require low maintenance and a short adjustment period. The myoelectric, on the other hand, has electrodes attached to a muscle on the patient so that when the patient flexes that muscle, it sends a signal to open or close the prosthetic hand. The benefits of this are that it is more seamless, there’s no need to move a shoulder to close a hand. However, such advanced prosthetics are often very costly, have a steep learning curve, and don’t actually provide that much more functionality than the more simple body powered option [1]. The final type of prosthetics (almost entirely in the research phase) are brain controlled. Currently, these are mostly done invasively as external electrodes have difficulty in gathering an accurate and dependable signal. Electrodes are implanted into the patient’s motor cortex to receive signals of motor intent from the patient, and that data would then be processed and used to control the prosthetic. Clearly, if fully functional, this would be the far better choice as it would allow for an almost seamless use of one’s artificial limb, however the need for electrodes to be implanted surgically is a significant drawback. Additionally, advanced processing of the neural signals is needed for such a system to be accurate. These types of prosthetics are subject to considerable amounts of research, yet no clinical versions are currently available. Overall, much improvement is still needed in this field. Even in the more advanced myoelectric version, the control scheme is still difficult, and even in the best of circumstances, few if any prosthetics can provide the user with force or tactile feedback, making even the simple task of grasping things difficult [3].
 
 <a id = "prop"></a>
 ## Proposed Design Solution: EEG + EMG Controlled Prosthetics 
 ![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_Susy2.png)
 
-The design selected allows user's brain signals from the scalp to be collected via an EEG headset. The signal is then sent to the cloud and is processed with software that contains a pipeline that will identify motor intent and translate it into a motor command to the prosthetic. This allows the amputee to feel as though the prosthetic is moving naturally. Additionally, the EMG component will be used to determine fine motor control, such as finger movements. An EMG cuff will be placed around the subject’s forearm, which will pick up muscle contraction biosignals. The implementation costs will come from a quality EEG headset ($4000-$40,000), and a simple myoelectric prosthetic ($3000).
+  The design selected allows user's brain signals from the scalp to be collected via an EEG headset. The signal is then sent to the cloud and is processed with software that contains a pipeline that will identify motor intent and translate it into a motor command to the prosthetic. This allows the amputee to feel as though the prosthetic is moving naturally. Additionally, the EMG component will be used to determine fine motor control, such as finger movements. An EMG cuff will be placed around the subject’s forearm, which will pick up muscle contraction biosignals. The implementation costs will come from a quality EEG headset ($4000-$40,000), and a simple myoelectric prosthetic ($3000).
 
 <a id = "imp"></a>
 ## Implementation Details
@@ -53,7 +54,11 @@ The pipeline responsible for the filtering, analyzing, and producing an output i
 
 ![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/pipeline.png)
 
-Thanks to the folks at [Neuropype](http://neuropype.io/), we were able to use their software for the creation of a real-time suite for EEG data analysis. By hacking into it and cleverly adding processing elements (such as the Gradient Boosting module), we were able to implement out own predictive algorithms. 
+Thanks to the folks at [Neuropype](http://neuropype.io/)[2], we were able to use their software for the creation of a real-time suite for EEG data analysis. By hacking into it and cleverly adding processing elements (such as the Gradient Boosting module), we were able to implement out own predictive algorithms. 
+
+<a id = "safety"></a>
+## Environmental, Social, Ethical, Health, and Safety Issues
+  Our design must consider the ethical concerns of using human subjects.  Participants are required to read and sign an informed consent form pertaining to the risks and benefits of the experiment before any testing may commence. Testing requires subjects to sustain attention during training and while instructing the prosthetic hand to execute motor tasks. If the cognitive load is too burdensome or if their desires and intentions fail to produce an expected result, participants may experience psychological distress (Glannon, 2014). Safety considerations regarding our testing are related to the level of invasiveness of the electrodes.  We are utilizing an EEG headset because it does not involve intracranial surgery or an implantation of a device within the brain, thus will not provide a risk of infection or hemorrhage. However, participants may experience some discomfort, such as a headache, from wearing an EEG headset for extended periods of time.  The Ag/AgCl electrodes are placed against the scalp to record cortical signals. Prolonged contact with skin may cause the silver compounds to slowly be absorbed, resulting in a bluish or blackish skin pigmentation or allergic dermatitis [3].
 
 <a id = "disc"></a>
 ## Discussion & Conclusion
@@ -79,3 +84,15 @@ Dr. Todd Coleman, Dr. Shankar Subramaniam
 
 ### Acknowledgements
 Qusp, Cognionics
+
+<a id = "bib"></a>
+## References
+
+
+[1] Wheeler, Bruce. “Laboratory 6 Electrocardiogram.” BENG 152 Biosystems, 31 Jan.  2016, Retrieved from TritonEd. Accessed 21 March 2017.
+
+[2] Neuropype.io. Retrieved from ​https://www.neuropype.io/
+
+[3] Glannon, Walter. “Ethical Issues with Brain-Computer Interfaces.” Frontiers in Systems Neuroscience 8 (2014): 136. PMC. Web. 6 Feb. 2017.
+Lenntech. "Silver." Silver - Ag - Chemical Properties, Health and Environmental Effects. Lenntech BV, 1998-2017. Web. 06 Feb. 
+
