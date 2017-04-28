@@ -26,6 +26,17 @@ Check out this video for a live demo:
 7. <a href = "#tldr">TL;DR</a>
 8. <a href = "#bib">Bibliography</a>
 
+<a id = "tldr"></a>
+## TL;DR 
+
+- Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
+- Our solution provides both intuitive control and multiple degrees of freedom
+- We do this by using EEG and EMG methods of control
+- The EEG is performed with an EEG headset and connects via Bluetooth to the prosthetic
+- The user’s motor intent is predicted by a machine learning algorithm and controls the opening
+and closing motions
+- The EMG is controlled by electrodes on the bicep and connected via wires to control the
+prosthetic wrist rotation
 
 <a id = "Introduction"></a>
 ## Introduction
@@ -64,19 +75,6 @@ The final design met the requirements by enabling a full-blown pipeline that imp
 <a id = "rec"></a>
 ## Recommendations
 Many important additional features and modifications should be considered for further work on the EEG controlled prosthetic arm system. To start, the latency of our device is quite poor, with a delay between intent and action of approximately 10 seconds. This delay is likely due to the many various connections between devices used, that is, connections between EEG to Neuropype, to Python, to Arduino, to Bluetooth, to the prosthetic arm. By developing a way to decrease the amount of necessary intermediate connections between EEG, Neuropype, and the prosthetic arm, there will be an improved latency and quicker reaction of the arm. Additionally, if greater funding were received, many improvements could have been made in the physical hand itself. For example, rather than having a hand made of servos, duct tape, and clothes hangers, an actual 3D-printed hand could have been created. This hand could have full functionality of all 5 fingers and of the wrist, rather than having a single servo controlling only the thumb, and another servo controlling the rotation of the wrist. Furthermore, a more concealed housing for the breadboard, wires, and Arduinos can be developed. This housing should make sure to properly avoid disconnecting loose wires, as ours often did. This housing should also make sure to properly shield the wires between electrodes and the Arduino to avoid any electromagnetic interference, and thus noise. Additionally, further work can be implemented into the machine learning algorithms in order to improve accuracy. The algorithms could also be used to interpret and classify additional EEG patterns in order to differentiate between the intent to move specific fingers, and with specific amounts of force. For future development, the actual purchase (rather than the occasional rental) of an EEG device would be of great use to more frequently test and train the machine learning algorithms. A possible additional modification of the device may include haptic feedback (either through vibration or actual nerve stimulation).
-
-<a id = "tldr"></a>
-## TL;DR 
-
-- Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
-- Our solution provides both intuitive control and multiple degrees of freedom
-- We do this by using EEG and EMG methods of control
-- The EEG is performed with an EEG headset and connects via Bluetooth to the prosthetic
-- The user’s motor intent is predicted by a machine learning algorithm and controls the opening
-and closing motions
-- The EMG is controlled by electrodes on the bicep and connected via wires to control the
-prosthetic wrist rotation
-
 
 
 # TUTORIAL ON HOW TO USE MARKDOWN!!!!!!!!!!!!
