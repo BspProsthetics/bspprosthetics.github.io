@@ -42,7 +42,7 @@ The design selected allows user's brain signals from the scalp to be collected v
 
 The pipeline responsible for the filtering, analyzing, and producing an output is the following:
 
-![](/content/images/2017/03/pipeline.png)
+![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/pipeline.png)
 
 Thanks to the folks at [Neuropype](http://neuropype.io/), we were able to use their software for the creation of a real-time suite for EEG data analysis. By hacking into it and cleverly adding processing elements (such as the Gradient Boosting module), we were able to implement out own predictive algorithms. 
 
