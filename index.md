@@ -18,15 +18,15 @@ Check out this video for a live demo:
 
 ## Outline of The Project Proposal
 <a id = "toc"></a>
-1. <a href = "#Introduction"> Introduction</a>
-2. <a href = "#bg_info">Relevant Background Information</a>
+1. <a href = "Quick_Look"></a>
+2. <a href = "#Introduction"> Introduction</a>
+3. <a href = "#bg_info">Relevant Background Information</a>
 4. <a href = "#prop">Proposed Design Solution: EEG + EMG Controlled Prosthetics </a>
 5. <a href = "#imp">Implementation Details</a>
 6. <a href = "#disc">Discussion and Conclusion</a>
-7. <a href = "#tldr">TL;DR</a>
-8. <a href = "#bib">Bibliography</a>
+7. <a href = "#bib">Bibliography</a>
 
-<a id = "tldr"></a>
+<a id = "Quick_Look"></a>
 ## Quick Look 
 
 - Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
