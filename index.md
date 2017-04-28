@@ -18,7 +18,7 @@ Check out this video for a live demo:
 
 ## Outline of The Project Proposal
 <a id = "toc"></a>
-1. <a href = "Quick_Look"></a>
+1. <a href = "Quick_Look"> Quick Look</a>
 2. <a href = "#Introduction"> Introduction</a>
 3. <a href = "#bg_info">Relevant Background Information</a>
 4. <a href = "#prop">Proposed Design Solution: EEG + EMG Controlled Prosthetics </a>
