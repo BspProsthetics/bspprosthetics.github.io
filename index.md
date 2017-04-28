@@ -1,7 +1,13 @@
 ## Bio Signal Prosthetics
 ### _Powering the prosthetic devices of tomorrow_
 
+### Authors
 
+- Anjulie Agrusa
+- Nick Harrington
+- Austin Lefebvre
+- Carlo Mazzaferro
+- Nicolle Woo
 
 Check out this video for a live demo:
 
