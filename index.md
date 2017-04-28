@@ -27,7 +27,7 @@ Check out this video for a live demo:
 8. <a href = "#bib">Bibliography</a>
 
 <a id = "tldr"></a>
-## TL;DR 
+## Quick Look 
 
 - Current upper limb prosthetics are often difficult to use, unintuitive, or require surgery
 - Our solution provides both intuitive control and multiple degrees of freedom
