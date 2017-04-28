@@ -11,6 +11,7 @@ Dr. Todd Coleman, Dr. Shankar Subramaniam
 Qusp, Cognionics
 
 Check out this video for a live demo:
+[![](https://raw.githubusercontent.com/BspProsthetics/bspprosthetics.github.io/master/BSP_pic.png)](https://player.vimeo.com/video/208059205)
 
 <iframe src="https://player.vimeo.com/video/208059205" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/208059205">BioSignal Prosthetics Demo Video</a> from <a href="https://vimeo.com/lakehousevideo">Josh Lake</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
